@@ -69,7 +69,7 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@jq-tools/jq": "^0.0.10",
-    "yaml": "^2.5.1"
+    "yaml": "^2.8.2"
   },
   "devDependencies": {
     "@types/node": "^20.4.4",
