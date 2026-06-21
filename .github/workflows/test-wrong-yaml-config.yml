@@ -57,17 +57,17 @@ jobs:
     runs-on: ubuntu-latest
     needs: [test]
     steps:
-      - uses: nick-fields/assert-action@v2
+      - uses: nick-fields/assert-action@v4
         with:
           expected: 'failure'
           actual: "${{ needs.test.outputs.result }}"
 
-      - uses: nick-fields/assert-action@v2
+      - uses: nick-fields/assert-action@v4
         with:
           expected: ''
           actual: "${{ needs.test.outputs.test }}"
 
-      - uses: nick-fields/assert-action@v2
+      - uses: nick-fields/assert-action@v4
         with:
           expected: ''
           actual: "${{ needs.test.outputs.bar }}"
